@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PdfPro.jnlp">
+  <information>
+    <title>PdfPro</title>
+    <vendor>Majesty</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PdfPro.jar" size="5537" download="eager" />
+    <jar href="lib\pdfbox-app-2.0.23.jar" size="9923001" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="pdfpro.PdfPro"  name="PdfPro" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="355.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pdfpro.FXMLDocumentController">
+	<padding>
+		<Insets bottom="5" left="5" right="5" top="5" />
+	</padding>
+	<top>
+            <HBox spacing="5">
+                    <Button mnemonicParsing="false" onAction="#loadFile" text="Import PDF..." />
+                    <Button mnemonicParsing="false" onAction="#extractPoints" text="Detect Points" />
+                    <padding>
+                        <Insets bottom="5" left="5" right="5" top="5" />
+                    </padding>
+            </HBox>
+	</top>
+   <bottom>
+		<Pagination fx:id="pagination" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane fx:id="pdfPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+	
+</BorderPane>
